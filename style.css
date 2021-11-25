@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'roboto condensed';
+  }
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+
+
+/* navigation bar*/
+header{
+    background-color: black;
+    padding: 1px;
+    height: 2%;
+}
+
+ul{
+    list-style : none ;
+}
+
+.main_nav_bar{
+    display : inline ;
+    color : white;
+    margin : 10px;
+}
+
+.logo{
+    /*border-radius: 70%;*/
+    width: 4%;
+}
+
+
+li a{ 
+    color: white;
+    text-decoration: none;
+}
+
+li a :hover{
+    color:yellowgreen;
+}
+
+/*body*/
+body{
+    background-color: antiquewhite;
+    margin: 0px;
+    padding: 0px;
+}
+
+  /* Container for flexboxes */
+ section {
+      display: -webkit-flex;
+      display: flex;
+     }
+  
+  /* Style the navigation menu */
+  .sidebar {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: rgb(4, 5, 73);
+    padding: 20px;
+  }
+
+  /* Style the list inside the menu */
+ .content_inside_sidebar{
+    list-style-type: none;
+    padding: 5;
+  }
+
+  .content_inside_sidebar :hover{
+      text-decoration: underline;
+  }
+
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+   /* background-color: #f1f1f1;*/
+    padding: 10px;
+  }
+  .song_headers{
+      text-align:center;
+      border: 1px solid black;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      background-color: burlywood;
+  }
+  
+
+/*footer*/
+footer{
+    background-color: black;
+    color:white;
+    text-align:center;
+    padding: 8px;
+}
+
